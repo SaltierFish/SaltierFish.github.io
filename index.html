@@ -2,70 +2,13 @@
 layout: default
 title: 历史语料库存档
 ---
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="6-6HckY_4cCA1xYkYpqcXxwyzC82a0mIyZswI0MdSao" />
-    <title>{{ page.title }}</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header h1 {
-            text-align: center;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .post-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .post-list li {
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .post-list a {
-            font-size: 1.2em;
-            text-decoration: none;
-            color: #0366d6;
-        }
-        .post-list a:hover {
-            text-decoration: underline;
-        }
-        .post-date {
-            display: block;
-            margin-top: 5px;
-            font-size: 0.9em;
-            color: #586069;
-        }
-    </style>
-</head>
-<body>
 
-    <header>
-        <h1>{{ page.title }}</h1>
-    </header>
-
-    <main>
-        <h2>文章列表</h2>
-        <ul class="post-list">
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              <span class="post-date">发布于：{{ post.date | date: "%Y年%m月%d日" }}</span>
-            </li>
-          {% endfor %}
-        </ul>
-    </main>
-
-</body>
-</html>
+<h2>文章列表</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <span class="post-date">发布于：{{ post.date | date: "%Y年%m月%d日" }}</span>
+    </li>
+  {% endfor %}
+</ul>
