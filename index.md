@@ -1,3 +1,5 @@
+<meta name="google-site-verification" content="6-6HckY_4cCA1xYkYpqcXxwyzC82a0mIyZswI0MdSao" />
+
 ---
 layout: default
 title: 语料库存档
